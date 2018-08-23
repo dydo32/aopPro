@@ -3,18 +3,18 @@
 핵심기능과 공통기능을 각각의 코드로 구현한 후 필요한 곳에서 적절하게 조합해서 완성된 코드로 실행되도록 하는 프로그래밍 기법
 
 *용어
-1. core concern핵심기능 - 비지니스 로직(주업무)
+1. core concern(핵심기능) - 비지니스 로직(주업무)
 2. cross-cutting concern(공통기능) - 부가기능(보조업무)
 3. code
-	core concern이 구현된 객체
+	core concern(핵심기능)이 구현된 객체
 4. Advice 
-	cross-cutting concern이 구현된 객체 
+	cross-cutting concern(공통기능)이 구현된 객체 
 5. joinPoint 
 	code와 advice를 연결할 수 있도록 도와주는 설정 정보 
 	즉, advice를 적용할 지점에 대한 정보(메소드 호출, 필드값을 변경...)
 6. Point-cut
 	joinPoint의 부분집합으로 실제 advice가 적용되는 joinpoint를 의미
-7.weaving
+7. weaving
 	code, advice, point-cut을 조합해서 어플리케이션을 생성
 	
 	

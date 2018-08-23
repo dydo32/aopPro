@@ -1,4 +1,4 @@
-package aop.exam01;
+package aop.exam02;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AOPClient {
 	public static void main(String[] args) {
 		ApplicationContext factory
-		  = new ClassPathXmlApplicationContext("config/aopconfig01.xml");
+		  = new ClassPathXmlApplicationContext("config/aopconfig02.xml");
 		DAO dao  = (DAO)factory.getBean("dao");
 		DAO dao2  = (DAO)factory.getBean("dao2");
 		UserVO vo =  new UserVO();
